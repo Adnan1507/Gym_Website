@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Styles/Admin_login_form.css">
+</head>
+<body style="background-image: url(images/Banner3.jpg); background-size: cover; height: 100vh;">
+    <header>
+        <nav>
+            <h3 class="section-title">PowerGym</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login_form.html"> User Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center">
+        <h1>Admin Login</h1>
+        <form id="loginForm" onsubmit="return validateForm(event)">
+            <div class="txt_field">
+                <label>Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="txt_field">
+                <label>Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        // JavaScript validation to check login credentials
+        function validateForm(event) {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Correct username and password
+            const correctUsername = "123456";
+            const correctPassword = "123456";
+
+            // Check if the username and password match
+            if (username === correctUsername && password === correctPassword) {
+                // If correct, allow form submission
+                window.location.href = "Admin_Page.html"; // Redirect to Admin page
+                return false; // Prevent form submission since we are handling redirection in JS
+            } else {
+                // If incorrect, prevent form submission and show an alert
+                event.preventDefault(); // Prevent the form from submitting
+                alert("Invalid username or password.");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

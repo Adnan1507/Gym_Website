@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 40px 100px;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav > ul {
+    display: flex;
+  }
+  
+  nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+  
+    transition: transform 0.3s ease;
+  }
+  nav li a:hover {
+    color: #f70000;
+    transform: scale(1.1);
+  }
+  .section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  .section-title:hover {
+    color: #ff4d4d;
+    transform: scale(1.1);
+  }
+  
+  /* Container Styling */
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    gap: 15px; /* Set the spacing between the search boxes */
+  }
+  
+  /* Form Styling */
+  form {
+    background: white;
+    width: 600px;
+    height: 55px;
+    display: flex;
+  }
+  form input {
+    flex: 1;
+    border: none;
+    outline: none;
+  }
+  form button {
+    background: tomato;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: wheat;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  input[type="text"] {
+    padding: 25px;
+  }
+  button {
+    background: tomato;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: wheat;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }

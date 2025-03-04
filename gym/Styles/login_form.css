@@ -1,0 +1,192 @@
+/* Body Styling */
+body {
+  margin: 0;
+  padding: 40px 100px;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  padding: 5px 20px; /* Minimized padding to bring it closer to the top */
+  box-sizing: border-box;
+  position: absolute; /* Position header absolutely */
+  top: 0; /* Align header to the top of the screen */
+  left: 0;
+  z-index: 10; /* Ensure header stays above other elements */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+nav li a:hover {
+  color: #f70000;
+  transform: scale(1.1);
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.section-title:hover {
+  color: #ff4d4d;
+  transform: scale(1.1);
+}
+
+/* Center Container Styling */
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensures the container spans the full viewport */
+  margin-top: 30px; /* Adjust margin to account for header height */
+  box-sizing: border-box;
+}
+
+/* Form Styling */
+.center {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px 40px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.center h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.center .txt_field {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.center .txt_field label {
+  font-size: 1rem;
+  color: #666666;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.center .txt_field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.center .txt_field input:hover {
+  border-color: #df7649;
+  cursor: pointer;
+}
+
+.center input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.center input[type="submit"]:hover {
+  background-color: #df7649;
+}
+
+.center .signup_link {
+  font-size: 0.9rem;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.center .signup_link a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.center .signup_link a:hover {
+  color: #df7649;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .center {
+    padding: 20px;
+  }
+
+  .center h1 {
+    font-size: 1.8rem;
+  }
+
+  .center .txt_field input {
+    font-size: 0.9rem;
+  }
+
+  .center input[type="submit"] {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .center {
+    padding: 15px;
+  }
+
+  .center h1 {
+    font-size: 1.5rem;
+  }
+
+  .center .txt_field input {
+    font-size: 0.9rem;
+  }
+
+  .center input[type="submit"] {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="Styles/Admin_Page.css" />
+    <style>
+      table {
+        width: 60%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        text-align: left;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        overflow-y: auto;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url(images/Banner3.jpg);
+      background-size: cover;
+      height: 100vh;
+    "
+  >
+    <header>
+      <nav>
+        <h3 class="section-title">PowerGYM</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login_form.html">User Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Add Member Button -->
+      <button type="button" onclick="window.location.href='SignUp_Form.html'">
+        Add Member
+      </button>
+
+      <!-- Search Box -->
+      <form class="search-box" action="search_member.php" method="POST">
+        <input
+          type="text"
+          name="mobile_no"
+          placeholder="Search Member Using Mobile Number"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <!-- Delete Member -->
+      <form class="search-box" action="delete_member.php" method="POST">
+        <input
+          type="text"
+          name="mobile_no"
+          placeholder="Search Member Using Mobile Number"
+          required
+        />
+        <button type="submit">Delete Member</button>
+      </form>
+
+      <!-- View All Members -->
+      <button
+        type="button"
+        onclick="window.location.href='show_allmember.html'"
+      >
+        Show All Members
+      </button>
+    </div>
+  </body>
+</html>
